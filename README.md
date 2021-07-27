@@ -16,7 +16,7 @@ SwiftSDL2 primarily uses [SwiftPM](https://swift.org/package-manager/) as its bu
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/sunlubo/SwiftSDL2.git", from: "0.0.1")
+    .package(url: "https://github.com/GothStar/SwiftSDL2.git", from: "0.0.8")
 ]
 ```
 
