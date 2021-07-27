@@ -36,32 +36,32 @@ extension Color {
 // MARK: - PixelFormat
 
 extension UInt32 {
-  public static let unknown = UInt32(SDL_PIXELFORMAT_UNKNOWN)
-  public static let bgr565 = UInt32(SDL_PIXELFORMAT_BGR565)
-  public static let rgb24 = UInt32(SDL_PIXELFORMAT_RGB24)
-  public static let bgr24 = UInt32(SDL_PIXELFORMAT_BGR24)
-  public static let rgb888 = UInt32(SDL_PIXELFORMAT_RGB888)
-  public static let bgr888 = UInt32(SDL_PIXELFORMAT_BGR888)
-  public static let argb8888 = UInt32(SDL_PIXELFORMAT_ARGB8888)
-  public static let rgba8888 = UInt32(SDL_PIXELFORMAT_RGBA8888)
-  public static let abgr8888 = UInt32(SDL_PIXELFORMAT_ABGR8888)
-  public static let bgra8888 = UInt32(SDL_PIXELFORMAT_BGRA8888)
-  public static let rgba32 = UInt32(SDL_PIXELFORMAT_RGBA32)
-  public static let bgra32 = UInt32(SDL_PIXELFORMAT_BGRA32)
+    public static let unknown = SDL_PIXELFORMAT_UNKNOWN
+    public static let bgr565 = SDL_PIXELFORMAT_BGR565
+  public static let rgb24 = SDL_PIXELFORMAT_RGB24
+  public static let bgr24 = SDL_PIXELFORMAT_BGR24
+  public static let rgb888 = SDL_PIXELFORMAT_RGB888
+  public static let bgr888 = SDL_PIXELFORMAT_BGR888
+  public static let argb8888 = SDL_PIXELFORMAT_ARGB8888
+  public static let rgba8888 = SDL_PIXELFORMAT_RGBA8888
+  public static let abgr8888 = SDL_PIXELFORMAT_ABGR8888
+  public static let bgra8888 = SDL_PIXELFORMAT_BGRA8888
+  public static let rgba32 = SDL_PIXELFORMAT_RGBA32
+  public static let bgra32 = SDL_PIXELFORMAT_BGRA32
   /// planar mode: Y + V + U (3 planes)
-  public static let yv12 = UInt32(SDL_PIXELFORMAT_YV12)
+  public static let yv12 = SDL_PIXELFORMAT_YV12
   /// planar mode: Y + U + V (3 planes)
-  public static let iyuv = UInt32(SDL_PIXELFORMAT_IYUV)
+  public static let iyuv = SDL_PIXELFORMAT_IYUV
   /// packed mode: Y0+U0+Y1+V0 (1 plane)
-  public static let yuy2 = UInt32(SDL_PIXELFORMAT_YUY2)
+  public static let yuy2 = SDL_PIXELFORMAT_YUY2
   /// packed mode: U0+Y0+V0+Y1 (1 plane)
-  public static let uyvy = UInt32(SDL_PIXELFORMAT_UYVY)
+  public static let uyvy = SDL_PIXELFORMAT_UYVY
   /// packed mode: Y0+V0+Y1+U0 (1 plane)
-  public static let yuyu = UInt32(SDL_PIXELFORMAT_YVYU)
+  public static let yuyu = SDL_PIXELFORMAT_YVYU
   /// planar mode: Y + U/V interleaved (2 planes) (>= SDL 2.0.4)
-  public static let nv12 = UInt32(SDL_PIXELFORMAT_NV12)
+  public static let nv12 = SDL_PIXELFORMAT_NV12
   /// planar mode: Y + V/U interleaved (2 planes) (>= SDL 2.0.4)
-  public static let nv21 = UInt32(SDL_PIXELFORMAT_NV21)
+    public static let nv21 = SDL_PIXELFORMAT_NV21
 
   /// Get the human readable name of a pixel format
   public var pixFmtName: String {
