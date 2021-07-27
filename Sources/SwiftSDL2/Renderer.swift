@@ -361,3 +361,9 @@ extension Renderer {
     case vertical = 0x00000002 // SDL_FLIP_VERTICAL
   }
 }
+
+public extension Renderer {
+    func destroy() {
+        SDL_DestroyRenderer(cRendererPtr)
+    }
+}
