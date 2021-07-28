@@ -11,7 +11,6 @@ let package = Package(
     targets: [
         .systemLibrary(name: "CSDL2", pkgConfig: "sdl2"),
         .systemLibrary(name: "CSDL2_image",
-                       path: "Sources/CSDL2_image",
                        pkgConfig: "sdl2_image",
                        providers: [
                         .brew(["sdl2_image"])
