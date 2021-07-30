@@ -12,14 +12,14 @@ import CSDL2
 /// A structure that represents a color.
 public typealias Color = SDL_Color
 
-extension Color {
-  public static let red = Color(r: 0xFF, g: 0x00, b: 0x00, a: 0xFF)
-  public static let green = Color(r: 0x00, g: 0xFF, b: 0x00, a: 0xFF)
-  public static let blue = Color(r: 0x00, g: 0x00, b: 0xFF, a: 0xFF)
-  public static let white = Color(r: 0xFF, g: 0xFF, b: 0xFF, a: 0xFF)
-  public static let black = Color(r: 0x00, g: 0x00, b: 0x00, a: 0xFF)
+public extension Color {
+    static let red = Color(r: 0xFF, g: 0x00, b: 0x00, a: 0xFF)
+    static let green = Color(r: 0x00, g: 0xFF, b: 0x00, a: 0xFF)
+    static let blue = Color(r: 0x00, g: 0x00, b: 0xFF, a: 0xFF)
+    static let white = Color(r: 0xFF, g: 0xFF, b: 0xFF, a: 0xFF)
+    static let black = Color(r: 0x00, g: 0x00, b: 0x00, a: 0xFF)
 
-  public static var random: Color {
+    static var random: Color {
     let r = UInt8(arc4random() % 255)
     let g = UInt8(arc4random() % 255)
     let b = UInt8(arc4random() % 255)
@@ -28,7 +28,7 @@ extension Color {
   }
 
   /// Maps an RGB triple to an opaque pixel value for a given pixel format.
-  public func toPixel(with pixFmt: PixelFormat) -> UInt32 {
+    func toPixel(with pixFmt: PixelFormat) -> UInt32 {
     return SDL_MapRGB(pixFmt.pixFmtPtr, r, g, b)
   }
 }
